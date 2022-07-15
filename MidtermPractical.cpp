@@ -6,51 +6,52 @@
 int main()
 {
 
+		std::cout << "\nPlease answer these following questions" << std::endl;
+
+		//std::cout << "How many are correct: \n \n" << std::endl;
+
+		std::cout << "1.Question(1)\n 2.Question(2) \n 3.Question(3) \n 4.Question(4)\n 5.Results";
+		std::cout << "\n please choose number: ";
 	while (true)
 	{
-		std::cout << "Please answer these following questions" << std::endl;
 		
-		//std::cout << "How many are correct: \n \n" << std::endl;
-	
-		std::cout << "1.Question(1)\n 2.Question(2) \n 3.Question(3) \n 4.Question(4)\n ";
-		std::cout << "\n please choose number: ";
-
-
 		int input;
 		std::cin >> input;
+
+
 
 
 		switch (input)
 		{
 		case 1:
 			system("CLS");
-			
+
 			std::cout << "\n Question 1 \n ";
 			std::cout << "What is 10 * 10 = \n";
 
 			std::cout << " 1. 9\n 2. 100\n 3. 20\n 4. 10\n";
 
 
-				int FstQ;
-				int choose;
-				std::cin >> FstQ;
+			int FstQ;
+			int choose;
+			std::cin >> FstQ;
 
 			if (FstQ == 2)
 			{
-				std::cout << "Correct\n";
+				std::cout << "Correct(+1) \n";
 			}
 			else if (FstQ != 2)
 			{
-				std::cout << "Wrong anwser\n";
+				std::cout << "Wrong anwser(-1)\n";
 			}
-			
-			
+
+			std::cout << "please press 2 for next question";
+
 
 			break;
 
 		case 2:
 
-			system("cls");
 
 
 			std::cout << "\n Question 2 \n ";
@@ -60,24 +61,26 @@ int main()
 
 
 			int SndQ;
-			
+
 			std::cin >> SndQ;
 
 			if (SndQ == 1)
 			{
-				std::cout << "Correct\n";
+				std::cout << "\nCorrect(+1) \n";
 			}
 			else if (SndQ != 1)
 			{
-				std::cout << "Wrong anwser\n";
+				std::cout << "Wrong anwser(-1)\n";
 			}
+
+			std::cout << "please press 3 for next question";
 
 
 			break;
 
 		case 3:
 
-			system("cls");
+
 
 			std::cout << "\n Question 3 \n ";
 			std::cout << "What does C.O.D stand for?\n";
@@ -91,18 +94,18 @@ int main()
 
 			if (ThrdQ == 4)
 			{
-				std::cout << "Correct\n";
+				std::cout << "\nCorrect(+1) \n";
 			}
 			else if (ThrdQ != 4)
 			{
-				std::cout << "Wrong anwser\n";
+				std::cout << "Wrong anwser(-1)\n";
 			}
+			std::cout << "please press 4 for next question";
 
 			break;
 
 		case 4:
 
-			system("cls");
 
 			std::cout << "\n Question 4 \n ";
 			std::cout << "What is Full Sail's, main Color? \n";
@@ -116,19 +119,29 @@ int main()
 
 			if (FourthQ == 2)
 			{
-				std::cout << "Correct\n";
+				std::cout << "\nCorrect(+1) \n";
 			}
 			else if (FourthQ != 2)
 			{
-				std::cout << "Wrong anwser\n";
+				std::cout << "Wrong anwser(-1)\n";
 			}
-			break;
+			std::cout << "please press 5 for results";
 
-		
-			
+			break;
+		case 5:
+
+			std::cout << "\n This means you finished the questions please count the points you have and check your score below\n";
+			std::cout << "\nif you got 4(+1) that means you got 4/4 correct\n if you got 3(+1) that means you got 3/4 correct\n if you got 2(+1) that means you got 2/4 correct\n if you got 1(+1) that means you got 1/4 correct\nif you have 0(+1) it means you failed ";
+
+			std::cout << "\nplease press 6 to exit";
+
+			case 6:
+				input = false;
+				break;
 		default:
-			system("cls");
-			std::cout << "Please input a PROPER NUMBER.\n";
+
+			std::cout << "\n please choose number: ";
+			
 			break;
 		}
 
