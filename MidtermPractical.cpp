@@ -11,7 +11,7 @@ int main()
 		//std::cout << "How many are correct: \n \n" << std::endl;
 
 		std::cout << "1.Question(1)\n 2.Question(2) \n 3.Question(3) \n 4.Question(4)\n 5.Results";
-		std::cout << "\n please choose number: ";
+		std::cout << "\n please choose number 1, then tap enter to start: ";
 	while (true)
 	{
 		
